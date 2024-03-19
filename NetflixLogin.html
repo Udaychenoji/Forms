@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow-x: auto;
+            background-image: url('NetflixImg.webp');
+            backdrop-filter: brightness(60%) ;
+            
+            background-size: cover;
+            
+            background-position: center;
+            
+            position: relative;
+           
+        }
+       
+        .container{
+            border: 1px solid black;
+            border-radius: 3px;
+            border: none;
+            width: 450px;
+            height: 650px;
+            background-color: rgba(0, 0, 0, 0.726);
+            color: white;
+           padding-top: 10px;
+           margin-top: 10px;
+           
+            
+
+
+        }
+
+        .SignIn{
+            font-weight: bolder;
+            font-size: 16px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            text-align: start;
+            margin-left: 65px;
+            margin-bottom: 40px;
+            padding-top: 30px;
+           
+           
+        }
+
+        .Form{
+            
+            flex-direction: column;
+            overflow: hidden;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: -20px;
+            border: none;
+            
+           
+   
+        }
+
+        input{
+          
+            width: 280px;
+            padding: 18px;
+            margin: 10px;
+            border-radius: 5px;
+            border: 1px solid rgba(97, 92, 92, 0.856);
+            background-color: rgba(27, 26, 26, 0.719);
+            color: rgba(255, 255, 255, 0.856);
+            font-size: 17px;
+           
+
+            
+        }
+
+        ::placeholder{
+           color: rgba(255, 255, 255, 0.596);
+           
+           
+        }
+
+        button{
+            width: 320px;
+            height: 43px;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(224, 7, 7);
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: rgba(236, 18, 18, 0.753);
+            
+        }
+
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-decoration:  none;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin-top: 20px;
+           
+        }
+
+
+
+        .chkbox{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding-top: 50px;
+        margin-top: 25px;
+        padding-bottom: 0px;
+       
+        
+        
+        
+        
+        
+        }
+        .chkbox input[type="checkbox"] {
+            margin-right: -125px;
+            margin-left: -65px;
+            
+            cursor: pointer;
+            
+           
+        }
+
+       
+        .SignUp{
+           
+            display: flex;
+            justify-content: center;
+            margin-top: -25px;
+            padding-bottom: 40px;
+            padding-right: 110px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(192, 190, 190);
+        }
+
+        .container p{
+            margin-right: 5px;
+            margin-top: 37px;
+            
+        }
+        .link{
+            font-weight: 500;
+        }
+      
+   
+       
+
+        .LearnMore{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: rgb(150, 148, 148);
+            font-weight: 400;
+            font-size: 14px;
+            width: 300px;
+            justify-content: start;
+            text-align: left;
+            margin-left: 65px;
+            margin-top: -45px;
+        }
+
+        .LearnMoreLink{
+            padding-left: 85px;
+            padding-bottom: 110px;
+            margin: -19px;
+            padding-right: 10px;
+            color: rgb(61, 61, 252);
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <form>
+            <div class="SignIn"><h1>Sign In</h1></div>
+            
+            <div class="Form"><input type="email" type="number" placeholder="Email or phone number" required>
+            <input type="password" placeholder="Password" required></div>
+
+            <button type="submit">Sign In</button> 
+            
+            <div><a href="#">Forgot password?</a></div>
+
+            
+            <div class="chkbox">
+                <input type="checkbox">
+                <label>Remember me</label>
+            </div>
+
+             <div class="SignUp">
+                <p>New to Netflix?</p>
+                <a href="#" class="link">Sign Up now.</a>
+             </div>       
+            <div class="LearnMore">This page is protected by Google reCAPTCHA to ensure you're not a bot.
+                <a href="#" class="LearnMoreLink">Learn more.</a></div>
+        </form>
+        
+    </div>
+</body>
+</html>
